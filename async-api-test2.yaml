@@ -8,4 +8,4 @@ channels:
       message:
         schemaFormat: 'application/vnd.apache.avro;version=1.9.0'
         payload:
-          $ref: 'https://raw.githubusercontent.com/dkucinskas/async-api-test/main/Employee2.avsc
+          $ref: 'https://raw.githubusercontent.com/dkucinskas/async-api-test/main/Employee2.avsc'
