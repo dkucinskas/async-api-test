@@ -8,4 +8,16 @@ channels:
       message:
         schemaFormat: 'application/vnd.apache.avro;version=1.9.0'
         payload:
-          $ref: 'https://raw.githubusercontent.com/dkucinskas/async-api-test/main/Employee.avsc'
+          $ref: 'https://raw.githubusercontent.com/dkucinskas/async-api-test/main/Employee.avsc
+---
+asyncapi: 2.0.0
+info:
+  title: Example with Avro #2
+  version: 0.1.0
+channels:
+  hello2:
+    publish:
+      message:
+        schemaFormat: 'application/vnd.apache.avro;version=1.9.0'
+        payload:
+          $ref: 'https://raw.githubusercontent.com/dkucinskas/async-api-test/main/Employee2.avsc'
