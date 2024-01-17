@@ -1,0 +1,48 @@
+{
+  "type" : "record",
+  "name" : "Employee",
+  "namespace" : "test.app",
+  "fields" : [ {
+    "name" : "eventMetadata",
+    "type" : {
+      "type" : "record",
+      "name" : "EventMetadata",
+      "namespace" : "test.common.metadata",
+      "fields" : [ {
+        "name" : "event",
+        "type" : "string",
+        "doc" : "Event name"
+      }, {
+        "name" : "time",
+        "type" : {
+          "type" : "long",
+          "logicalType" : "timestamp-millis"
+        },
+        "doc" : "The point in time when the event occurred, represented as the number of milliseconds since Unix epoch"
+      }, {
+        "name" : "portal",
+        "type" : {
+          "type" : "enum",
+          "name" : "Portals",
+          "symbols" : [ "lt", "lv", "es" ]
+        },
+        "doc" : "A unique identifier"
+      }, {
+        "name" : "debug_pin",
+        "type" : [ "null", "int" ],
+        "doc" : "A unique debug session pin",
+        "default" : null
+      } ]
+    }
+  }, {
+    "name" : "name",
+    "type" : "string"
+  }, {
+    "name" : "active",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "name" : "salary",
+    "type" : "long"
+  } ]
+}
