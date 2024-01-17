@@ -1,6 +1,6 @@
 asyncapi: 2.0.0
 info:
-  title: Example with Avro
+  title: Example with Avro #1
   version: 0.1.0
 channels:
   hello:
