@@ -42,7 +42,7 @@
     "type" : "boolean",
     "default" : true
   }, {
-    "name" : "salary",
+    "name" : "alga",
     "type" : "long"
   } ]
 }
