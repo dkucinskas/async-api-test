@@ -1,6 +1,6 @@
 {
   "type" : "record",
-  "name" : "Employee",
+  "name" : "Employee2",
   "namespace" : "test.app",
   "fields" : [ {
     "name" : "eventMetadata",
