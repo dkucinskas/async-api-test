@@ -1,0 +1,38 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: async-api-test
+  description: Async api generated from avro schema
+  links:
+    - url: https://raw.githubusercontent.com/dkucinskas/async-api-test/some1/api/v1/
+      title: Async API doc
+      icon: dashboard
+    - url: https://raw.githubusercontent.com/dkucinskas/async-api-test/some1/api/openapi.yaml
+      title: Async API doc
+      icon: github
+spec:
+  type: asyncapi
+  lifecycle: production
+  owner: observability
+  definition:
+    $text: https://raw.githubusercontent.com/dkucinskas/async-api-test/main/async-api-test.yaml
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: async-api-test2
+  description: Async api generated from avro schema
+  links:
+    - url: https://raw.githubusercontent.com/dkucinskas/async-api-test/some2/api/v1/
+      title: Async API doc
+      icon: dashboard
+    - url: https://raw.githubusercontent.com/dkucinskas/async-api-test/some2/api/openapi.yaml
+      title: Async API doc
+      icon: github
+spec:
+  type: asyncapi
+  lifecycle: production
+  owner: observability
+  definition:
+    $text: https://raw.githubusercontent.com/dkucinskas/async-api-test/main/async-api-test2.yaml
